@@ -1,0 +1,113 @@
+/* ===== Moore Memories — shared styles (all pages) ===== */
+html { scroll-padding-top: 96px; }
+body { -webkit-font-smoothing: antialiased; background: #fdfaf4; }
+.font-display { font-feature-settings: "liga" 1, "dlig" 1; }
+
+/* Eyebrow with a couture rule */
+.eyebrow { text-transform: uppercase; font-size: .76rem; font-weight: 600; letter-spacing: .26em; display: inline-flex; align-items: center; gap: .85rem; max-width: 100%; white-space: nowrap; }
+.eyebrow::after { content:""; flex: 0 1 26px; min-width: 10px; height: 1px; background: currentColor; opacity: .55; }
+.eyebrow.center { justify-content: center; }
+.eyebrow.center::before { content:""; flex: 0 1 26px; min-width: 10px; height: 1px; background: currentColor; opacity: .55; }
+/* Small screens: tighten the label so long eyebrows (e.g. the hero "Ocean Lakes · Myrtle Beach, SC") stay on ONE line with the rule-dashes attached, instead of wrapping and flinging the dashes to the corners. */
+@media (max-width: 480px) {
+  .eyebrow { font-size: .66rem; letter-spacing: .14em; gap: .5rem; }
+}
+
+/* Header — gradient scrim over hero, solid on scroll / on sub-pages */
+.site-header { transition: background-color .4s ease, box-shadow .4s ease, color .4s ease; color: #fff; }
+.site-header:not(.scrolled) { background: linear-gradient(to bottom, rgba(8,32,28,.62) 0%, rgba(8,32,28,.18) 70%, rgba(8,32,28,0) 100%); }
+.site-header.scrolled { background: rgba(253,250,244,.94); backdrop-filter: blur(12px); box-shadow: 0 1px 0 rgba(28,41,37,.10); color: #1c2925; }
+.site-header .navlink { position: relative; }
+.site-header .navlink::after { content:""; position:absolute; left:0; bottom:-5px; height:1px; width:0; background: #b5894e; transition: width .35s ease; }
+.site-header .navlink:hover::after, .site-header .navlink.active::after { width:100%; }
+.site-header .logo { text-shadow: 0 1px 14px rgba(0,0,0,.4); }
+.site-header.scrolled .logo { text-shadow: none; }
+
+/* Ken Burns hero */
+@keyframes kenburns { from { transform: scale(1.03); } to { transform: scale(1.15); } }
+.kenburns { animation: kenburns 24s ease-out alternate infinite; }
+.hero-img { filter: brightness(.86) saturate(1.06); }
+.hero-grad { background: linear-gradient(180deg, rgba(8,32,28,.45) 0%, rgba(8,32,28,.22) 34%, rgba(8,32,28,.38) 62%, rgba(8,32,28,.86) 100%); }
+.hero h1 { letter-spacing: -.015em; line-height: 1.0; text-shadow: 0 2px 30px rgba(0,0,0,.35); }
+.hero .subcopy { text-shadow: 0 1px 14px rgba(0,0,0,.4); }
+
+/* Sub-page banner (pine, sits under the fixed header) */
+.pagehero { background: #103833; color: #f6f1e8; }
+.pagehero .pagehero-img { filter: brightness(.5) saturate(1.05); }
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 1s cubic-bezier(.2,.7,.2,1), transform 1s cubic-bezier(.2,.7,.2,1); }
+.reveal.in { opacity: 1; transform: none; }
+
+/* Image treatment — unified grade + hover zoom */
+.imgzoom { overflow: hidden; }
+.imgzoom img { transition: transform .9s cubic-bezier(.2,.7,.2,1); filter: saturate(.97) contrast(1.03); }
+.imgzoom:hover img { transform: scale(1.06); }
+
+/* Buttons — refined small-radius geometry, polished brass */
+.btn-brass { display:inline-flex; align-items:center; justify-content:center; background: linear-gradient(180deg, #c19659 0%, #a87d3f 100%); color: #fff; border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 4px 12px rgba(40,40,30,.18); transition: filter .3s ease, transform .2s ease; font-weight: 600; }
+.btn-brass:hover { filter: brightness(1.06); transform: translateY(-1px); }
+.btn-ghost { display:inline-flex; align-items:center; justify-content:center; border: 1px solid rgba(255,255,255,.55); color:#fff; border-radius: 8px; background: rgba(255,255,255,.12); backdrop-filter: blur(8px);
+  transition: background-color .3s ease, border-color .3s ease; text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+.btn-ghost:hover { background: rgba(255,255,255,.2); border-color:#fff; }
+.btn-pine { display:inline-flex; align-items:center; justify-content:center; background:#103833; color:#fff; border-radius:8px; font-weight:600; transition: background-color .3s ease, transform .2s ease; }
+.btn-pine:hover { background:#0b2a26; transform: translateY(-1px); }
+
+.hairline { height:1px; background: linear-gradient(90deg, rgba(181,137,78,.0), rgba(181,137,78,.7), rgba(181,137,78,.0)); }
+.tnum { font-variant-numeric: tabular-nums; }
+.quote-mark { font-family:"Cormorant Garamond",serif; line-height:0; }
+::selection { background: #b5894e; color:#fff; }
+
+/* Native control polish */
+input, select, textarea { font-family: inherit; font-size: 16px; }
+input[type="date"]::-webkit-calendar-picker-indicator { opacity:.6; cursor:pointer; }
+/* Visible keyboard focus for the date/guest fields that intentionally drop the native outline (text inputs already carry a focus ring) */
+input[type="date"]:focus-visible, select:focus-visible { outline: 2px solid #b5894e; outline-offset: 2px; border-radius: 6px; }
+
+/* FAQ / details accordion */
+.acc summary { list-style: none; }
+.acc summary::-webkit-details-marker { display: none; }
+
+/* Gallery filter chips */
+.filter-chip { cursor:pointer; border:1px solid #e3d8c4; color:#1c2925; background:#fff; border-radius:9999px; padding:.5rem 1.1rem; font-size:.85rem; font-weight:500; transition: all .25s ease; }
+.filter-chip:hover { border-color:#b5894e; }
+.filter-chip.active { background:#103833; color:#fff; border-color:#103833; }
+
+/* Availability calendar mockup */
+.cal-grid { display:grid; grid-template-columns: repeat(7, 1fr); gap:4px; }
+.cal-cell { aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; border-radius:8px; font-size:.85rem; }
+.cal-open { background:#dcebe0; color:#103833; box-shadow: inset 0 0 0 1px rgba(16,56,51,.14); }
+.cal-booked { background:#e7dcc6; color:#6b5d44; text-decoration:line-through; text-decoration-thickness:2px; box-shadow: inset 0 0 0 1px rgba(107,93,68,.20); }
+.cal-dim { color:#cdc6b8; }
+
+/* Lightbox */
+#lb { transition: opacity .3s ease; }
+#lb.hidden { opacity: 0; pointer-events: none; }
+
+/* Mobile polish */
+h1, h2, h3 { text-wrap: balance; }       /* avoid single-word orphan lines in headings */
+p { text-wrap: pretty; }                 /* nicer body wrapping */
+textarea { resize: none; }               /* no stray resize handle poking out of rounded inputs */
+.filter-chip { white-space: nowrap; }    /* chip labels never break mid-word */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+#amenities .flex-1 { text-wrap: balance; } /* even amenity label/detail wrap — no orphaned "cart ride" line */
+#layout li span { text-wrap: balance; }    /* specs list — no single-word orphan lines ("shower", "deck") */
+
+/* Horizontal chip strip: fade the right edge on mobile so a clipped chip signals more-to-scroll */
+@media (max-width: 639px) {
+  .chip-fade {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+            mask-image: linear-gradient(to right, #000 calc(100% - 34px), transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .kenburns { animation: none; }
+  .reveal { opacity:1; transform:none; transition:none; }
+}
+
+/* iOS safe-area / notch: with viewport-fit=cover the page goes edge-to-edge, so pad the fixed header below the status bar and let the header/pagehero background fill the strip (env() is 0 on non-notch devices, so Android/desktop are unaffected) */
+.site-header { padding-top: env(safe-area-inset-top); }
+.pagehero { padding-top: env(safe-area-inset-top); }

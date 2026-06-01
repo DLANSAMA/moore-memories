@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Moore Memories | Tiny Home at Ocean Lakes, Myrtle Beach</title>
+  <meta name="description" content="A modern tiny home at Ocean Lakes Family Campground. Vaulted ceilings, sleeping loft with two queens, sleeps 6, a golf-cart ride to the private beach." />
+  <meta name="author" content="Dylan Reed" />
+  <meta name="theme-color" content="#103833" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="canonical" href="https://moorememories.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Moore Memories" />
+  <meta property="og:title" content="Moore Memories · A Tiny Home at Ocean Lakes" />
+  <meta property="og:description" content="Sleeps 6 · loft with two queens · short golf-cart ride to the private beach. Gated Ocean Lakes Family Campground, Myrtle Beach, SC." />
+  <meta property="og:url" content="https://moorememories.com/" />
+  <meta property="og:image" content="https://moorememories.com/assets/exterior.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://moorememories.com/assets/exterior.jpg" />
+
+  <!-- Ocean Lakes Site 1669 / 1669 Starfish Rd — a tiny home, 1 bedroom + loft (two queens),
+       sleeps 6, 1 bath. Photos provided by the owner (assets/listing/, room-named).
+       Rates & reviews still illustrative. Multi-page static site. -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="assets/tw.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body class="font-sans text-ink">
+
+  <!-- ===== HERO ===== -->
+  <section id="top" class="hero relative h-screen min-h-[660px] flex items-center justify-center overflow-hidden">
+    <img src="assets/exterior.jpg" alt="Tiny home exterior at Ocean Lakes" class="kenburns hero-img absolute inset-0 w-full h-full object-cover" />
+    <div class="absolute inset-0 hero-grad"></div>
+    <div class="relative z-10 text-center text-white px-6 max-w-4xl">
+      <p class="eyebrow center text-sand mb-7">Ocean Lakes · Myrtle Beach, SC</p>
+      <h1 class="font-display font-medium text-5xl sm:text-7xl lg:text-[5.5rem]">Your sandy-toes<br><span class="italic font-normal text-sand/95" style="font-size:.92em">home base by the sea</span></h1>
+      <p class="subcopy mt-6 text-base sm:text-lg font-light text-white/90 max-w-xl mx-auto leading-relaxed">A brand-new 2023 tiny home with vaulted ceilings, a sleeping loft with two queens, and a short golf-cart ride to the beach — inside Myrtle Beach's gated, award-winning Ocean Lakes.</p>
+      <div class="mt-9 flex flex-wrap gap-4 justify-center items-center">
+        <a href="rates.html#book" class="btn-brass px-8 py-4 tracking-wide">Check Availability</a>
+        <a href="the-home.html" class="text-white/90 hover:text-white text-sm font-medium inline-flex items-center gap-2 transition">Explore the home
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-10 inset-x-0 z-10 hidden md:block">
+      <div class="max-w-3xl mx-auto px-6">
+        <div class="bg-white/14 backdrop-blur-md border border-white/30 rounded-2xl p-2 flex items-stretch gap-1 text-white shadow-2xl">
+          <label class="flex-1 px-4 py-2.5 cursor-pointer"><span class="block text-[10px] uppercase tracking-[.18em] text-white/70">Check in</span><input id="heroIn" type="date" class="bg-transparent w-full text-sm text-white/95 outline-none [color-scheme:dark]" /></label>
+          <div class="w-px bg-white/25 my-2"></div>
+          <label class="flex-1 px-4 py-2.5 cursor-pointer"><span class="block text-[10px] uppercase tracking-[.18em] text-white/70">Check out</span><input id="heroOut" type="date" class="bg-transparent w-full text-sm text-white/95 outline-none [color-scheme:dark]" /></label>
+          <div class="w-px bg-white/25 my-2"></div>
+          <label class="flex-1 px-4 py-2.5 cursor-pointer"><span class="block text-[10px] uppercase tracking-[.18em] text-white/70">Guests</span>
+            <select id="heroG" class="bg-transparent w-full text-sm text-white/95 outline-none [color-scheme:dark]"><option class="text-ink">1–2 guests</option><option class="text-ink" selected>3–4 guests</option><option class="text-ink">5–6 guests</option></select>
+          </label>
+          <a id="heroGo" href="rates.html#book" class="btn-brass px-7 flex items-center text-sm">Check Availability</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST / STATS ===== -->
+  <section class="bg-cream border-b border-sand-deep">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-12 grid grid-cols-2 md:grid-cols-4 gap-y-9 md:gap-y-0 md:divide-x divide-sand-deep text-center">
+      <div class="px-3"><p class="font-display text-4xl text-pine">Sleeps 6</p><p class="text-[11px] uppercase tracking-[.18em] text-ink/55 mt-2">1 bed + sleeping loft</p></div>
+      <div class="px-3"><p class="font-display text-4xl text-pine">Loft</p><p class="text-[11px] uppercase tracking-[.18em] text-ink/55 mt-2">Two queen beds</p></div>
+      <div class="px-3"><p class="font-display text-4xl text-pine">1 Bath</p><p class="text-[11px] uppercase tracking-[.18em] text-ink/55 mt-2">Walk-in shower</p></div>
+      <div class="px-3"><p class="font-display text-4xl text-pine">Gated</p><p class="text-[11px] uppercase tracking-[.18em] text-ink/55 mt-2">24/7 resort security</p></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT TEASER ===== -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-24 lg:py-28 grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+    <div class="reveal">
+      <p class="eyebrow text-brass-dark mb-5">The Home</p>
+      <h2 class="font-display text-3xl sm:text-5xl font-medium text-pine leading-[1.04] tracking-[-.01em]">A brand-new <br class="hidden sm:inline" />tiny home by the sea.</h2>
+      <div class="hairline w-24 my-7"></div>
+      <p class="text-ink/80 leading-[1.75] max-w-[62ch]">Welcome to Moore Memories, a tiny home on Site 1669 in the heart of Ocean Lakes. Vaulted ceilings and walls of windows open up an airy living, dining, and kitchen; a rear queen bedroom and a loft with two queen beds sleep up to six. Fully equipped and a short golf-cart ride from nearly a mile of private beach.</p>
+      <div class="mt-8 flex flex-wrap gap-x-7 gap-y-3" id="houseChips"></div>
+      <a href="the-home.html" class="btn-pine px-7 py-3.5 mt-9 text-sm tracking-wide">Tour the home</a>
+    </div>
+    <div class="reveal grid grid-cols-2 grid-rows-2 gap-4 h-[420px] sm:h-[520px]">
+      <div class="imgzoom rounded-2xl shadow-sm" data-lb data-full="assets/listing/Living_4.jpg" data-cap="Living area, vaulted ceilings"><img src="assets/listing/Living_4.jpg" alt="Living area with vaulted ceilings" class="object-cover h-full w-full" /></div>
+      <div class="imgzoom rounded-2xl shadow-sm" data-lb data-full="assets/listing/Kitchen.jpg" data-cap="Kitchen"><img src="assets/listing/Kitchen.jpg" alt="Kitchen" class="object-cover h-full w-full" /></div>
+      <div class="imgzoom rounded-2xl shadow-sm" data-lb data-full="assets/listing/Master.jpg" data-cap="Primary bedroom"><img src="assets/listing/Master.jpg" alt="Primary bedroom" class="object-cover h-full w-full" /></div>
+      <div class="imgzoom rounded-2xl shadow-sm" data-lb data-full="assets/listing/Loft.jpg" data-cap="Loft — two queen beds"><img src="assets/listing/Loft.jpg" alt="Loft with two queen beds" class="object-cover h-full w-full" /></div>
+    </div>
+  </section>
+
+  <!-- ===== BOOK DIRECT STRIP ===== -->
+  <section class="bg-pine text-sand">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="bookDirect"></div>
+  </section>
+
+  <!-- ===== GALLERY TEASER ===== -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-16 sm:py-24 lg:py-28">
+    <div class="reveal flex flex-wrap items-end justify-between gap-4 mb-10">
+      <div><p class="eyebrow text-brass-dark mb-5">Gallery</p><h2 class="font-display text-3xl sm:text-5xl font-medium text-pine tracking-[-.01em]">A look around</h2></div>
+      <a href="gallery.html" class="btn-pine px-6 py-3 text-sm self-start">View all 36 photos</a>
+    </div>
+    <div class="reveal grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 md:h-[560px]">
+      <div class="imgzoom rounded-2xl col-span-2 md:col-span-2 md:row-span-2" data-lb data-full="assets/listing/Porch_Day.jpg" data-cap="Covered porch & deck"><img src="assets/listing/Porch_Day.jpg" alt="Covered porch and composite deck" class="object-cover w-full h-full min-h-[200px]" /></div>
+      <div class="imgzoom rounded-2xl" data-lb data-full="assets/listing/Living.jpg" data-cap="Living & dining"><img src="assets/listing/Living.jpg" alt="Living and dining" class="object-cover w-full h-full min-h-[120px]" /></div>
+      <div class="imgzoom rounded-2xl" data-lb data-full="assets/listing/Kitchen_2.jpg" data-cap="Kitchen"><img src="assets/listing/Kitchen_2.jpg" alt="Kitchen" class="object-cover w-full h-full min-h-[120px]" /></div>
+      <div class="imgzoom rounded-2xl" data-lb data-full="assets/listing/Living_3.jpg" data-cap="Living area"><img src="assets/listing/Living_3.jpg" alt="Living area" class="object-cover w-full h-full min-h-[120px]" /></div>
+      <div class="imgzoom rounded-2xl relative" data-lb data-full="assets/listing/Outside_Aerial.jpg" data-cap="Aerial over Ocean Lakes"><img src="assets/listing/Outside_Aerial.jpg" alt="Aerial over Ocean Lakes" class="object-cover w-full h-full min-h-[120px]" /><a href="gallery.html" class="absolute inset-0 bg-pine-deep/55 flex items-center justify-center font-display text-2xl text-white">View all photos</a></div>
+    </div>
+  </section>
+
+  <!-- ===== RESORT TEASER ===== -->
+  <section class="relative">
+    <div class="grid lg:grid-cols-2 lg:items-stretch">
+      <div class="bg-pine-deep text-sand px-6 sm:px-10 lg:px-16 py-16 sm:py-24 lg:py-28 flex items-center">
+        <div class="reveal max-w-[34rem] ml-auto w-full">
+          <p class="eyebrow text-brass-light mb-5">The Resort</p>
+          <h2 class="font-display text-3xl sm:text-5xl font-medium text-white leading-[1.05] tracking-[-.01em]">A whole vacation world inside the gates</h2>
+          <div class="hairline w-24 my-7"></div>
+          <p class="text-sand/85 leading-[1.75] max-w-[58ch]">Ocean Lakes is a gated, 310-acre oceanfront resort — nearly a mile of private beach, a 3-acre Sandy Harbor water park, indoor &amp; outdoor pools, mini golf, an arcade, fishing lakes, and a general store, all a short golf-cart ride from your porch.</p>
+          <div class="mt-10 grid grid-cols-3 gap-6 text-center border-t border-white/12 pt-8">
+            <div><p class="font-display text-3xl text-brass-light tnum">1 mi</p><p class="text-[10px] uppercase tracking-[.18em] text-sand/60 mt-2">Private beach</p></div>
+            <div><p class="font-display text-3xl text-brass-light tnum">3 acres</p><p class="text-[10px] uppercase tracking-[.18em] text-sand/60 mt-2">Water park</p></div>
+            <div><p class="font-display text-3xl text-brass-light tnum">24/7</p><p class="text-[10px] uppercase tracking-[.18em] text-sand/60 mt-2">Gated security</p></div>
+          </div>
+          <a href="resort-area.html" class="btn-brass px-7 py-3.5 mt-9 text-sm tracking-wide">Explore the resort &amp; area</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 grid-rows-2 gap-1 min-h-[440px] lg:min-h-0">
+        <div class="imgzoom" data-lb data-full="assets/listing/Outside_Aerial_2.jpg" data-cap="Aerial over Ocean Lakes toward the Atlantic"><img src="assets/listing/Outside_Aerial_2.jpg" alt="Aerial over Ocean Lakes toward the Atlantic" class="object-cover w-full h-full" /></div>
+        <div class="imgzoom" data-lb data-full="assets/listing/Outside_Aerial_3.jpg" data-cap="Aerial over the Ocean Lakes community"><img src="assets/listing/Outside_Aerial_3.jpg" alt="Over the Ocean Lakes community" class="object-cover w-full h-full" /></div>
+        <div class="imgzoom col-span-2" data-lb data-full="assets/listing/Outside_3_Day.jpg" data-cap="Golf-cart streets through the resort"><img src="assets/listing/Outside_3_Day.jpg" alt="Golf-cart streets through the resort" class="object-cover w-full h-full" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCATION ===== -->
+  <section class="bg-cream py-14 sm:py-24 lg:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+      <div class="reveal">
+        <p class="eyebrow text-brass-dark mb-5">Location</p>
+        <h2 class="font-display text-3xl sm:text-5xl font-medium text-pine tracking-[-.01em]">Where you'll be</h2>
+        <div class="hairline w-24 my-7 hidden sm:block"></div>
+        <p class="text-ink/80 leading-[1.75] max-w-[58ch] mt-5 sm:mt-0">Site 1669 sits on the gated south end of Myrtle Beach — secluded and secure, yet about 10 minutes from the airport and minutes from the Grand Strand's best beaches, golf, and dining.</p>
+        <div class="mt-8 grid sm:grid-cols-2 gap-x-10 gap-y-3 max-w-lg" id="driveTimes"></div>
+        <a href="plan.html" class="btn-pine px-7 py-3.5 mt-9 text-sm tracking-wide">Plan your stay</a>
+      </div>
+      <div class="reveal">
+        <div class="rounded-2xl overflow-hidden shadow-2xl border border-sand-deep h-64 sm:h-80 lg:h-[420px] bg-sand">
+          <iframe title="Map of Ocean Lakes Family Campground" class="w-full h-full" style="border:0" src="https://www.openstreetmap.org/export/embed.html?bbox=-79.005%2C33.620%2C-78.945%2C33.672&layer=mapnik&marker=33.6469%2C-78.9745"></iframe>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Ocean%20Lakes%20Family%20Campground%20Myrtle%20Beach%20SC" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 mt-4 text-sm text-brass-dark hover:text-pine transition">Open in Google Maps
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REVIEWS TEASER ===== -->
+  <section class="bg-pine text-sand py-16 sm:py-24 lg:py-28">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="reveal text-center max-w-2xl mx-auto mb-14">
+        <p class="eyebrow center text-brass-light mb-5">Guest Reviews</p>
+        <h2 class="font-display text-3xl sm:text-5xl font-medium text-white tracking-[-.01em]">Made for easy getaways</h2>
+        <p class="text-brass-light text-xl mt-5 tracking-[.4em]">★★★★★</p>
+      </div>
+      <div id="reviewGrid" class="reveal grid sm:grid-cols-3 gap-6"></div>
+
+    </div>
+  </section>
+
+  <!-- ===== MEET YOUR HOST ===== -->
+  <section class="bg-cream py-14 sm:py-20 lg:py-24 border-t border-sand-deep">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-center gap-8 text-center sm:text-left reveal">
+      <div class="shrink-0 w-28 h-28 rounded-full bg-pine text-brass-light font-display text-4xl flex items-center justify-center shadow-inner">T&amp;D</div>
+      <div>
+        <p class="eyebrow text-brass-dark mb-3">Your Hosts</p>
+        <h2 class="font-display text-3xl sm:text-4xl font-medium text-pine" id="hostName"></h2>
+        <p class="mt-3 text-ink/75 leading-relaxed max-w-[60ch]" id="hostBlurb"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="relative overflow-hidden">
+    <img src="assets/listing/Outside_2_Day.jpg" alt="Tiny home at Ocean Lakes" class="absolute inset-0 w-full h-full object-cover hero-img" />
+    <div class="absolute inset-0 bg-pine-deep/70"></div>
+    <div class="relative max-w-3xl mx-auto px-6 py-16 sm:py-24 lg:py-28 text-center text-white">
+      <h2 class="font-display text-3xl sm:text-5xl font-medium">Your Myrtle Beach week is waiting</h2>
+      <p class="mt-5 text-sand/90 leading-relaxed max-w-xl mx-auto">Summer weeks book first. Send your dates and party size and we'll confirm availability and our simple booking steps.</p>
+      <a href="rates.html#book" class="btn-brass px-8 py-4 mt-8 tracking-wide">Check Availability</a>
+    </div>
+  </section>
+
+  <script src="assets/data.js"></script>
+  <script>
+    document.getElementById('houseChips').innerHTML =
+      [['Sleeps 6'],['Loft + 2 queens'],['Golf-cart to beach'],['Private beach access']]
+      .map(c => `<span class="text-sm text-pine font-medium">· ${c[0]}</span>`).join('');
+
+    document.getElementById('bookDirect').innerHTML = TP.bookDirect.map(r =>
+      `<div class="flex items-start gap-3"><span class="text-brass-light mt-0.5">✦</span><p class="text-sand/85 text-sm leading-relaxed">${r}</p></div>`).join('');
+
+    const dt = [['Myrtle Beach Airport (MYR)','~10 min'],['Myrtle Beach State Park','~5 min'],['The Market Common','~12 min'],['Murrells Inlet MarshWalk','~15 min'],['Broadway at the Beach','~18 min'],['Surfside Beach Pier','~8 min']];
+    document.getElementById('driveTimes').innerHTML = dt.map(x =>
+      `<div class="flex items-baseline justify-between gap-3 border-b border-sand-deep pb-2"><span class="text-ink/75 text-sm">${x[0]}</span><span class="text-brass-dark text-sm font-semibold tnum shrink-0">${x[1]}</span></div>`).join('');
+
+    document.getElementById('reviewGrid').innerHTML = TP.reviews.slice(0,3).map(r =>
+      `<div class="bg-pine-soft/40 border border-white/10 rounded-2xl p-7">
+        <p class="quote-mark text-5xl text-brass-light">&ldquo;</p>
+        <p class="font-display italic text-lg text-sand leading-[1.5] -mt-3">${r[2]}</p>
+        <p class="mt-5 text-[11px] uppercase tracking-[.18em] text-sand/70 font-semibold">${r[0]} <span class="text-sand/40">· ${r[1]}</span></p>
+      </div>`).join('');
+
+    // Meet your host
+    document.getElementById('hostName').textContent = TP.host.name;
+    document.getElementById('hostBlurb').textContent = TP.host.blurb;
+
+    // Hero search → carry dates/guests to the booking form
+    const hg = document.getElementById('heroGo');
+    if (hg) hg.addEventListener('click', e => {
+      e.preventDefault();
+      const i = document.getElementById('heroIn').value, o = document.getElementById('heroOut').value, g = document.getElementById('heroG').value || '';
+      const q = []; if (i) q.push('in=' + i); if (o) q.push('out=' + o); if (g) q.push('g=' + encodeURIComponent(g));
+      window.location.href = 'rates.html' + (q.length ? '?' + q.join('&') : '') + '#book';
+    });
+  </script>
+  <script src="assets/site.js"></script>
+
+  <script type="application/ld+json">
+  { "@context":"https://schema.org","@type":"VacationRental","name":"Moore Memories — Tiny Home at Ocean Lakes",
+    "description":"A bright, modern tiny home at Ocean Lakes, Myrtle Beach — vaulted ceilings, open-concept living, a primary queen bedroom plus a loft with two queen beds (sleeps 6), one full bath, a covered porch, and a short golf-cart ride to the private beach.",
+    "url":"https://moorememories.com/","image":"https://moorememories.com/assets/exterior.jpg","telephone":"+1-843-555-0142","priceRange":"$70–$300 per night",
+    "numberOfBedrooms":1,"numberOfBathroomsTotal":1,"occupancy":{"@type":"QuantitativeValue","maxValue":6},
+    "amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Sleeping loft with two queen beds","value":true},{"@type":"LocationFeatureSpecification","name":"Free WiFi","value":true},{"@type":"LocationFeatureSpecification","name":"Air conditioning","value":true},{"@type":"LocationFeatureSpecification","name":"Full kitchen","value":true},{"@type":"LocationFeatureSpecification","name":"Washer and dryer","value":true},{"@type":"LocationFeatureSpecification","name":"Covered porch and deck","value":true}],
+    "containedInPlace":{"@type":"Campground","name":"Ocean Lakes Family Campground","address":{"@type":"PostalAddress","streetAddress":"6001 S Kings Hwy","addressLocality":"Myrtle Beach","addressRegion":"SC","postalCode":"29575","addressCountry":"US"}},
+    "address":{"@type":"PostalAddress","streetAddress":"1669 Starfish Rd, Ocean Lakes Family Campground, 6001 S Kings Hwy","addressLocality":"Myrtle Beach","addressRegion":"SC","postalCode":"29575","addressCountry":"US"},
+    "geo":{"@type":"GeoCoordinates","latitude":33.6469,"longitude":-78.9745} }
+  </script>
+</body>
+</html>
