@@ -42,6 +42,12 @@
     </div>`;
   document.body.prepend(header);
 
+  /* iOS: paint the status-bar safe-area strip in brand pine so it never shows a white/cream bar.
+     Needs viewport-fit=cover; env(safe-area-inset-top) is 0 on non-notch devices, so this is invisible on Android/desktop. */
+  const safeTop = document.createElement('div');
+  safeTop.style.cssText = 'position:fixed;top:0;left:0;right:0;height:env(safe-area-inset-top);background:#103833;z-index:55;pointer-events:none';
+  document.body.appendChild(safeTop);
+
   /* ---------- FOOTER ---------- */
   const footer = document.createElement('footer');
   footer.className = 'bg-pine-deep text-sand/70 pt-16 pb-28 lg:pb-12';
